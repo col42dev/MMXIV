@@ -9,11 +9,6 @@
  */
 angular.module('mmxvApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
 
     $scope.romanNumeral = '';
     $scope.decimalNumeral = '';
@@ -59,3 +54,29 @@ angular.module('mmxvApp')
 
 	
   });
+
+
+angular.module('mmxvApp').directive('inputRestrictor', [function () {
+    return {
+        restrict: 'A',
+        require: 'ngModel',
+        link: function (scope, element, attr, ngModelCtrl) {
+            function fromUser(text) {
+                if (!text) {
+                    return text; }
+
+                var transformedInput = text.toUpperCase(); 
+
+                transformedInput = transformedInput.replace(/[^XCDIMV]/gi, '');
+
+                if (transformedInput !== text) {
+                    ngModelCtrl.$setViewValue(transformedInput);
+                 
+                    ngModelCtrl.$render();
+                }
+                return transformedInput;
+            }
+            ngModelCtrl.$parsers.push(fromUser);
+        }
+    };
+}]);
