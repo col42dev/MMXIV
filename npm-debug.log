@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'instal', 'bower.json' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 silly cache add args [ 'bower.json', null ]
+5 verbose cache add spec bower.json
+6 silly cache add parsed spec { raw: 'bower.json',
+6 silly cache add   scope: null,
+6 silly cache add   name: null,
+6 silly cache add   rawSpec: 'bower.json',
+6 silly cache add   spec: '/Users/colinmoore/Dev/MMXIV/bower.json',
+6 silly cache add   type: 'local' }
+7 silly addLocalTarball shasum (computed) ce10b68b57ab34c23da0921cafde561c46bc1c61
+8 verbose addTmpTarball /Users/colinmoore/Dev/MMXIV/bower.json not in flight; adding
+9 verbose addTmpTarball validating metadata from /Users/colinmoore/Dev/MMXIV/bower.json
+10 verbose tar unpack /Users/colinmoore/Dev/MMXIV/bower.json
+11 verbose tar unpacking to /var/folders/24/4zzv9q7s319_d46n2z9njwb00000gn/T/npm-7582-2c309ac9/unpack-dfe43167b9b2
+12 silly gentlyRm /var/folders/24/4zzv9q7s319_d46n2z9njwb00000gn/T/npm-7582-2c309ac9/unpack-dfe43167b9b2 is being purged
+13 verbose gentlyRm don't care about contents; nuking /var/folders/24/4zzv9q7s319_d46n2z9njwb00000gn/T/npm-7582-2c309ac9/unpack-dfe43167b9b2
+14 silly gunzTarPerm modes [ '755', '644' ]
+15 error not a package /Users/colinmoore/Dev/MMXIV/bower.json
+16 error addLocal Could not install /Users/colinmoore/Dev/MMXIV/bower.json
+17 verbose stack Error: ENOENT, open '/var/folders/24/4zzv9q7s319_d46n2z9njwb00000gn/T/npm-7582-2c309ac9/unpack-dfe43167b9b2/package.json'
+17 verbose stack     at Error (native)
+18 verbose cwd /Users/colinmoore/Dev/MMXIV
+19 error Darwin 14.3.0
+20 error argv "node" "/usr/local/bin/npm" "instal" "bower.json"
+21 error node v0.12.2
+22 error npm  v2.7.4
+23 error path /var/folders/24/4zzv9q7s319_d46n2z9njwb00000gn/T/npm-7582-2c309ac9/unpack-dfe43167b9b2/package.json
+24 error code ENOENT
+25 error errno -2
+26 error enoent ENOENT, open '/var/folders/24/4zzv9q7s319_d46n2z9njwb00000gn/T/npm-7582-2c309ac9/unpack-dfe43167b9b2/package.json'
+26 error enoent This is most likely not a problem with npm itself
+26 error enoent and is related to npm not being able to find a file.
+27 verbose exit [ -2, true ]
